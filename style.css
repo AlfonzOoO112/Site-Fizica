@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --white--: #FFF2F2;
+    --bright--blue--: #A9B5DF;
+    --navy--: #2D336B;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+header{
+    background: var(--navy--);
+}
+
+body{
+    background:#FFF2F2;
+}
+
+header .navbar{
+    display: flex;
+    padding: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text{
+    color: var(--white--);
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 40px;
+}
+
+.navbar .nav-menu .nav-link{
+    color: var(--white--);
+}
+
+.navbar .nav-menu .nav-link{
+    padding: 10px 18px;
+    color: var(--white--);
+    border-radius: 100%;
+    transition: 0.3s ease;
+}
+.navbar .nav-menu .nav-link:hover{
+    color: var(--navy--);
+    background: var(--bright--blue--);
+}
+
+.hero-section{
+    background-image: linear-gradient( rgba(0,0,0, 0.5), rgba(0,0,0,0.5) ), url("brasov-blog.jpeg");
+    background-repeat: no-repeat;
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.hero-section .title{
+    padding-top: 100px;
+    padding-left: 600px;
+    font-size: 150px;
+    color:#FFF2F2
+}
+.hero-section .title2{
+    padding-left: 300px;
+    font-size: 150px;
+    color:#FFF2F2
+}
+
+.big-img{
+    filter: brightness(50%);
+    width: 100%;
+    height: 100%;
+}
