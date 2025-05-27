@@ -20,9 +20,9 @@ html {
 
 body {
     background: var(--white--);
-    color: var(--gray--);
     line-height: 1.6;
     text-align: justify;
+    color: var(--navy--);
 }
 
 ul {
@@ -110,6 +110,8 @@ header {
     justify-content: space-between;
     display: flex;
     align-items: center;
+    color: var(--navy--);
+    font-size: 20px;
 }
 
 .mid-section .img{
@@ -124,6 +126,8 @@ header {
     justify-content: space-between;
     display: flex;
     align-items: center;
+    color: var(--navy--);
+    font-size: 20px;
 }
 
 .mid-section3 .section-content{
@@ -133,6 +137,8 @@ header {
     justify-content: space-between;
     display: flex;
     align-items: center;
+    color: var(--navy--);
+    font-size: 20px;
 }
 
 .mid-section3 .section-content .title{
@@ -151,6 +157,8 @@ header {
     justify-content: space-between;
     display: flex;
     align-items: center;
+    color: var(--navy--);
+    font-size: 20px;
 }
 
 .mid-section4 .section-content .title{
@@ -164,6 +172,8 @@ header {
     justify-content: space-between;
     display: flex;
     align-items: center;
+    color: var(--navy--);
+    font-size: 20px;
 }
 
 .mid-section5 .section-content .title{
@@ -184,8 +194,9 @@ header {
     display: flex;
     align-items: center;
     text-align: center;
+    color: var(--navy--);
+    font-size: 20px;
 }
-
 
 section h2 {
     font-size: 32px;
@@ -195,6 +206,7 @@ section h2 {
 
 section p {
     font-size: 18px;
+    color: var(--gray--);
 }
 
 img {
