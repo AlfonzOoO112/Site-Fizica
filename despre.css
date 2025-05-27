@@ -1,0 +1,249 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --white--: #FFF2F2;
+    --bright--blue--: #A9B5DF;
+    --navy--: #2D336B;
+    --gray--: #333;
+    --light--gray: #f4f4f4;
+}
+
+body {
+    background: var(--white--);
+    line-height: 1.6;
+    text-align: justify;
+    color: var(--navy--);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+header {
+    background: var(--navy--);
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo .logo-text {
+    color: var(--white--);
+    font-size: 1.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: var(--white--);
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background: var(--bright--blue--);
+    color: var(--navy--);
+}
+
+.hero-section {
+   background-image: linear-gradient( rgba(0,0,0, 0.5), rgba(0,0,0,0.5) ), url("brasov-blog.jpeg");
+    min-height: 600px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white--);
+    padding: 60px 20px;
+}
+
+.hero-section .title {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.hero-section .title2 {
+    font-size: 64px;
+}
+
+.hero-section .section-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.mid-section .section-content{
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: var(--navy--);
+    font-size: 20px;
+}
+
+.mid-section .img{
+    width: 1000px;
+    height: 183px;
+}
+
+.mid-section2 .section-content{
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: var(--navy--);
+    font-size: 20px;
+}
+
+.mid-section3 .section-content{
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: var(--navy--);
+    font-size: 20px;
+}
+
+.mid-section3 .section-content .title{
+    text-align: right;
+}
+.mid-section3 .section-content .img{
+    width: 2000px;
+    height: 250px;
+    padding: 10px;
+}
+
+.mid-section4 .section-content{
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: var(--navy--);
+    font-size: 20px;
+}
+
+.mid-section4 .section-content .title{
+    text-align: center;
+}
+
+.mid-section5 .section-content{
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: var(--navy--);
+    font-size: 20px;
+}
+
+.mid-section5 .section-content .title{
+    text-align: left;
+}
+
+.mid-section5 .section-content .img{
+    width: 1500px;
+    height: 250px;
+    padding: 10px;
+}
+
+.mid-section6 .section-content{
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--navy--);
+    font-size: 20px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--navy--);
+}
+
+section p {
+    font-size: 18px;
+    color: var(--gray--);
+}
+
+img {
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+}
+
+.two-column {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.two-column .left {
+    flex: 1 1 25%;
+    min-width: 180px;
+}
+
+.two-column .right {
+    flex: 1 1 70%;
+}
+
+.two-column h2,
+.two-column h3 {
+    color: var(--navy--);
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-align: left;
+}
+
+.two-column p {
+    color: var(--gray--);
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
