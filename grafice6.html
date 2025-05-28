@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Info-Fizică</title>
+    <link rel="stylesheet" href="grafice.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Zone', 'Maximul', 'Media', 'Minimul'],
+            ['Astra', 78.79, 65.44, 51.86],
+            ['Tractorul', 77.72, 73.53, 49.89],
+            ['Centru Nou', 78.04, 70.14, 54.88],
+            ['Centru Vechi', 84.02, 68.25, 58.92],
+            ['Noua', 78.91, 63.72, 57.01],
+            ['Bartolomeu', 76.49, 71.66, 55.62],
+            ['Florilor', 77.62, 66.21, 54.25],
+            ['Valea Cetatii / Racadau', 79.22, 68.33, 53.85],
+        ]
+        );
+
+        var options = {
+            title: 'Media valorilor săptămânale pe zone',
+            backgroundColor: '#FFF2F2',
+            height: 800,
+            colors: ['#F93827', '#FFD65A', '#16C47F'],
+            hAxis: {
+                slantedText: true,
+                slantedTextAngle: 45,
+                textStyle: {
+                fontSize: 10
+            },
+            bar: { groupWidth: '75%' },
+            isStacked: false,
+        }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('columnchart_material'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar section-content">
+        <a href="index.html" class="nav-logo">
+            <h2 class="logo-text">Info-Fizică</h2>
+        </a>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Acasă</a></li>
+            <li><a href="despre.html" class="nav-link">Despre Proiect</a></li>
+            <li><a href="grafice.html" class="nav-link">Grafice</a></li>
+            <li><a href="harta.html" class="nav-link">Hartă</a></li>
+            <li><a href="echipa.html" class="nav-link">Echipă</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+        <nav class="grafice-nav">
+            <ul>
+                <li><a href="grafice.html">Luni</a></li>
+                <li><a href="grafice2.html">Marți</a></li>
+                <li><a href="grafice3.html">Miercuri</a></li>
+                <li><a href="grafice4.html">Joi</a></li>
+                <li><a href="grafice5.html">Vineri</a></li>
+                <li><a href="grafice6.html">Pe Zone</a></li>
+            </ul>
+        </nav>
+    <section class="section-content">
+        <div id="columnchart_material" class="chart"></div>
+        
+    </section>
+</main>
+</body>
+</html>
